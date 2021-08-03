@@ -16,7 +16,7 @@ struct MeshformSite: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://meshform.org")!
     var name = "Meshform"
-    var description = "A procedural geometry library"
+    var description = "A procedural geometry library. This project is still in early development."
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
