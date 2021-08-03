@@ -22,4 +22,9 @@ struct MeshformSite: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try TestSite().publish(withTheme: .foundation)
+try MeshformSite().publish(
+    withTheme: .foundation,
+    additionalSteps: [
+        .copyFile(at: "CNAME"),
+    ]
+)
